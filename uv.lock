@@ -556,6 +556,7 @@ name = "disasters-hub"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "fsspec" },
     { name = "geopandas" },
     { name = "ipykernel" },
     { name = "jupytergis" },
@@ -570,6 +571,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "fsspec", specifier = ">=2025.5.1" },
     { name = "geopandas", specifier = ">=1.1.0" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "jupytergis", specifier = ">=0.5.0" },
